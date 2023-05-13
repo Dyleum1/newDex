@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Core  Dao",
+      "symbol": "CORE",
+      "address": "0x40375c92d9faf44d2f9db9bd9ba41a3317a2404f",
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/qyzFCCh/core.jpg"
+    },
+    {
+      "name": "Dyleum Test",
+      "symbol": "LEUMx",
+      "address": "0x03Bd86798e9aEd0c27EbCEE39754f3F0ac36615c",
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/NVhFJ6C/dyleumlogo.jpg"
+    },
+    {
+        "name": "Wrapped Core",
+        "symbol": "WCORE",
+        "address": "0x40375c92d9faf44d2f9db9bd9ba41a3317a2404f",
+        "decimals": 18,
+        "logoURI": "https://i.ibb.co/qyzFCCh/core.jpg"
+      }
+  ]
+  

@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Core  Dao",
+      "symbol": "TCORE",
+      "address": "0x536eABc2C78401661EdFE1f6Ede9d420775814B1",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/12591/small/binance-coin-logo.png?1600947313"
+    },
+    {
+      "name": "Dyleum Token",
+      "symbol": "LEUM",
+      "address": "0x7Aad75d782C8ecfc3E25157eA6134Ad17Ed16575",
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/13744/small/symbol-whitebg200x200.png?1611377553"
+    },
+    {
+        "name": "Wrapped Core",
+        "symbol": "WCORE",
+        "address": "0x536eABc2C78401661EdFE1f6Ede9d420775814B1",
+        "decimals": 18,
+        "logoURI": "https://assets.coingecko.com/coins/images/13744/small/symbol-whitebg200x200.png?1611377553"
+      }
+  ]
+  
