@@ -44,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icon: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color:'#a3c1ff',
 
     fontSize: 24,
     [theme.breakpoints.down("sm")]: {
@@ -72,7 +73,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: '#a3c1ff',
   },
 }));
 

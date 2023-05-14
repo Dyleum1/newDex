@@ -101,7 +101,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 2,
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    color: "#a3c1ff",
+    // color: theme.palette.primary.iconColor,
     fontSize: 22,
     [theme.breakpoints.down("sm")]: {
       fontSize: 20,
@@ -164,7 +165,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   clearButton: {
-    color: "#E0077D",
+    color: "white",
+    // color: "#E0077D",
     cursor: "pointer",
     fontSize: 16,
     [theme.breakpoints.down("sm")]: {
@@ -216,7 +218,8 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "12px 50px 12px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      // background: "rgba(224, 7, 125, 0.7)",
+      background: '#a3c1ff',
     },
     [theme.breakpoints.down("sm")]: {
       marginTop: 5,

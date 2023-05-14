@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
   },
   closeButton: {
     marginTop: 20,
-    backgroundColor: "rgba(224, 7, 125, 0.9)",
+    // backgroundColor: "rgba(224, 7, 125, 0.9)",
+    backgroundColor:  "#370937",
     color: "white",
     width: "90%",
     textTransform: "none",
@@ -45,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "8px 50px 8px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      // background: "rgba(224, 7, 125, 0.7)",
+      background:  '#a3c1ff',
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
@@ -72,7 +74,8 @@ const TransactionPopup = ({ dex: { transaction }, onClose }) => {
           {transaction.status === TransactionStatus.WAITING && (
             <div className="text-center">
               <CircularProgress
-                style={{ color: "#E0077D" }}
+                style={{ color: '#a3c1ff' }}
+                // style={{ color: "#E0077D" }}
                 color="secondary"
                 size={60}
               />
@@ -102,7 +105,8 @@ const TransactionPopup = ({ dex: { transaction }, onClose }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h6 style={{ color: "#DF097C", fontSize: 14 }}>
+                <h6 style={{ color: '#a3c1ff', fontSize: 14 }}>
+                {/* <h6 style={{ color: "#DF097C", fontSize: 14 }}> */}
                   View on explorer
                 </h6>
               </a>
@@ -121,7 +125,8 @@ const TransactionPopup = ({ dex: { transaction }, onClose }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h6 style={{ color: "#DF097C", fontSize: 14 }}>
+                <h6 style={{ color: '#a3c1ff', fontSize: 14 }}>
+                {/* <h6 style={{ color: "#DF097C", fontSize: 14 }}> */}
                   View on explorer
                 </h6>
               </a>
@@ -142,7 +147,8 @@ const TransactionPopup = ({ dex: { transaction }, onClose }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <h6 style={{ color: "#DF097C", fontSize: 14 }}>
+                  {/* <h6 style={{ color: "#DF097C", fontSize: 14 }}> */}
+                  <h6 style={{ color: '#a3c1ff', fontSize: 14 }}>
                     View on explorer
                   </h6>
                 </a>

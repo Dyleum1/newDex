@@ -41,7 +41,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   numbers: {
-    color: theme.palette.textColors.pbr,
+    // color: theme.palette.textColors.pbr,
+    color: '#a3c1ff',
 
     fontSize: 20,
     marginLeft: 15,
@@ -51,8 +52,10 @@ const useStyles = makeStyles((theme) => ({
     color: "#757575",
   },
   cancelButton: {
-    backgroundColor: theme.palette.primary.iconBack,
-    color: theme.palette.primary.iconColorGold,
+    backgroundColor: "#370937",
+    // backgroundColor: theme.palette.primary.iconBack,
+    // color: theme.palette.primary.iconColorGold,
+    color: 'white',
     borderColor: "#f6f6f6",
     width: 130,
     height: 40,
@@ -64,7 +67,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     marginBottom: 5,
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.3)",
+      // background: "rgba(255, 255, 255, 0.3)",
+      background: '#a3c1ff',
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,
@@ -73,8 +77,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   signoutButton: {
-    backgroundColor: theme.palette.primary.pbr,
-    color: theme.palette.primary.buttonText,
+    // backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "#370937",  // "#370937"  '#a3c1ff'
+    // color: theme.palette.primary.buttonText,
+    color: "white",
     borderColor: "#f6f6f6",
     width: 130,
     height: 40,
@@ -86,7 +92,8 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     marginBottom: 5,
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.3)",
+      background: '#a3c1ff',
+      // background: "rgba(255, 255, 255, 0.3)",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,

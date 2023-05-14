@@ -38,7 +38,8 @@ const useStyles = makeStyles((theme) => ({
   },
   labelFont: {
     fontSize: 14,
-    color: theme.palette.textColors.headingWhite,
+    // color: theme.palette.textColors.headingWhite,
+    color: '#a3c1ff',
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,

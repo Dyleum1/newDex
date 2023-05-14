@@ -84,7 +84,8 @@ const useStyles = makeStyles((theme) => ({
   confirmButton: {
     marginTop: 15,
     marginBottom: 15,
-    backgroundColor: theme.palette.primary.pbr,
+    // backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "#370937",
     color: "white",
     width: "90%",
     textTransform: "none",
@@ -94,7 +95,8 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "12px 50px 12px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      // background: "rgba(224, 7, 125, 0.7)",
+      background: '#a3c1ff',
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
@@ -110,7 +112,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 12,
   },
   icon: {
-    color: theme.palette.primary.iconColorGold,
+    // color: theme.palette.primary.iconColorGold,
+    color: '#a3c1ff',
     transition: "all 0.4s ease",
     fontSize: 22,
     borderRadius: 30,

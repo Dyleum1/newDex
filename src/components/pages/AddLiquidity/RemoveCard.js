@@ -83,7 +83,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: '#a3c1ff',
     fontSize: 22,
     cursor: "pointer",
     [theme.breakpoints.down("sm")]: {
@@ -134,7 +135,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     paddingTop: 20,
 
-    color: theme.palette.textColors.pbr,
+    color:'#a3c1ff',
+    // color: theme.palette.textColors.pbr,
     [theme.breakpoints.down("sm")]: {
       fontSize: 17,
       paddingTop: 10,
@@ -147,7 +149,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
   },
   percentInputBtn: {
-    color: theme.palette.textColors.pbr,
+    // color: theme.palette.textColors.pbr,
+    color: '#a3c1ff',
 
     cursor: "pointer",
     border: "0.1px solid rgba(255, 255, 255, 0.1)",
@@ -156,7 +159,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.1)",
+      // background: "rgba(255, 255, 255, 0.1)", //'#a3c1ff' "#370937"
+      background: "#370937", //'#a3c1ff'
     },
   },
   pairDetail: {
@@ -182,7 +186,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 13,
   },
   spinner: {
-    color: theme.palette.textColors.pbr,
+    // color: theme.palette.textColors.pbr,
+    color: '#a3c1ff',
   },
   heading: {
     color: theme.palette.textColors.headingWhite,
@@ -208,7 +213,8 @@ const useStyles = makeStyles((theme) => ({
   },
   removeBtn: {
     marginTop: 20,
-    backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: '#a3c1ff',
+    // backgroundColor: theme.palette.primary.pbr,
     color: "white",
     width: "95%",
     textTransform: "none",
@@ -219,7 +225,8 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "12px 50px 12px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      background: "#370937",
+      // background: "rgba(224, 7, 125, 0.7)",
     },
     [theme.breakpoints.down("sm")]: {
       marginTop: 5,

@@ -163,7 +163,9 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "12px 50px 12px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      // background: "rgba(224, 7, 125, 0.7)",
+      background: '#a3c1ff',
+
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
@@ -895,7 +897,7 @@ const Swap = (props) => {
       <Button
         disabled={currentSwapStatus.disabled}
         className={classes.swapButton}
-        style={{color:'#a3c1ff'}}
+        style={{color:'#ffffff'}}
         onClick={handleAction}
       >
         {currentSwapStatus.currentBtnText}

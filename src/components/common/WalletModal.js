@@ -289,7 +289,7 @@ const WalletModal = ({ popupActive, resetPopup }) => {
                   }}
                   mt={3}
                 >
-                  By connecting a wallet, you agree to StormSwap Terms of
+                  By connecting a wallet, you agree to Dyleum Terms of
                   Service and consent to its Privacy Policy.
                 </Typography>
               </Box>

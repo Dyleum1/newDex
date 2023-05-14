@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
   input: {
     backgroundColor: "transparent",
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: "white",
     height: 40,
     border: "1px solid rgba(224, 224, 224,1)",
     borderRadius: 10,
@@ -49,7 +50,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   closeIcon: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: "#370937",
     fontSize: 24,
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
@@ -66,7 +68,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     cursor: "pointer",
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color:"#370937",
     marginBottom: 10,
     fontSize: 14,
     fontWeight: 400,
@@ -98,9 +101,11 @@ const useStyles = makeStyles((theme) => ({
   },
   applyButton: {
     marginTop: 20,
-    backgroundColor: theme.palette.primary.pbr,
+    // backgroundColor: theme.palette.primary.pbr,
+    backgroundColor: "#370937",
 
-    color: theme.palette.primary.buttonText,
+    // color: theme.palette.primary.buttonText,
+    color: "white",
     width: "84%",
     textTransform: "none",
     fontSize: 17,
@@ -110,7 +115,8 @@ const useStyles = makeStyles((theme) => ({
     transform: "perspective(1px) translateZ(0px)",
     padding: "8px 50px 8px 50px",
     "&:hover": {
-      background: "rgba(224, 7, 125, 0.7)",
+      background: '#a3c1ff',
+      // background: "rgba(224, 7, 125, 0.7)",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: 14,
@@ -118,7 +124,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: "#370937",
     paddingTop: 10,
   },
 }));
@@ -272,7 +279,8 @@ const SwapSettings = ({
                     marginLeft: 10,
                     fontSize: 18,
                     marginTop: 3,
-                    color: "#919191",
+                    // color: "#919191",
+                    color: "#370937",
                   }}
                 />
               </Tooltip>
@@ -289,7 +297,8 @@ const SwapSettings = ({
                 style={{
                   fontSize: 12,
                   marginLeft: 10,
-                  color: "#454545",
+                  color: "#370937",
+                  // color: "#454545",
                   fontWeight: 600,
                 }}
               >

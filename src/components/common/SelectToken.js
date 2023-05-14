@@ -26,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   noToken: {
     display: "flex",
     alignItems: "center",
-    backgroundColor: "rgba(224, 7, 125, 0.9)",
+    // backgroundColor: "rgba(224, 7, 125, 0.9)",
+    backgroundColor: '#a3c1ff',
 
     borderRadius: 12,
     paddingLeft: 13,
@@ -36,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
     height: 35,
     cursor: "pointer",
     "&:hover": {
-      background: "rgba(224, 1, 125, 0.7)",
+      // background: "rgba(224, 1, 125, 0.7)",
+      background: "#370937",
     },
   },
   tokenIcon: {

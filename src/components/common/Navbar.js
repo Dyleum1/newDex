@@ -28,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
   spanLogoText: {
     fontWeight: 700,
+    // . "#370937"  '#a3c1ff'
   },
   appBarBackground: {
     boxShadow: "none",
