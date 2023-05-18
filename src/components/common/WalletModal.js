@@ -261,7 +261,7 @@ const WalletModal = ({ popupActive, resetPopup }) => {
                 <CircularProgress></CircularProgress>
                 <Typography
                   fontSize={sm ? 13 : 16}
-                  color={"#919191"}
+                  color={"a3c1ff"}
                   fontWeight={sm ? 400 : 500}
                   mb={sm ? 0.5 : 1}
                 >
@@ -270,7 +270,7 @@ const WalletModal = ({ popupActive, resetPopup }) => {
 
                 <Typography
                   fontSize={sm ? 13 : 16}
-                  color={"#919191"}
+                  color={"a3c1ff"}
                   fontWeight={600}
                   mb={sm ? 0.5 : 1}
                 >
@@ -278,13 +278,13 @@ const WalletModal = ({ popupActive, resetPopup }) => {
                 </Typography>
                 <Typography
                   style={{
-                    backgroundColor: "#d1c4e9",
+                    backgroundColor: "#370937",
                     padding: 5,
                     borderRadius: 5,
-                    color:
-                      theme.palette.mode === "light"
-                        ? theme.palette.text.primary
-                        : "#212121",
+                    color: 'a3c1ff',
+                       // theme.palette.mode === "light"
+                      //   ? theme.palette.text.primary
+                      //   : "#212121",
                     textAlign: "center",
                   }}
                   mt={3}

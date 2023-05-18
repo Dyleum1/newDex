@@ -75,7 +75,8 @@ const useStyles = makeStyles((theme) => ({
     borderColor: "transparent",
     fontSize: 20,
     fontWeight: 500,
-    color: theme.palette.textColors.headingWhite,
+    // color: theme.palette.textColors.headingWhite,
+    color: 'white',
     maxWidth: 150,
     outline: "none",
     [theme.breakpoints.down("sm")]: {

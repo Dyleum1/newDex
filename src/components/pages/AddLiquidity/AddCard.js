@@ -109,7 +109,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   addIcon: {
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: '#a3c1ff',
     marginTop: -12,
     marginBottom: -12,
     borderRadius: "36%",
@@ -159,9 +160,10 @@ const useStyles = makeStyles((theme) => ({
   },
   feeSelectHeadingSpan: {
     color: "rgba(223, 9, 124,1)",
-    fontSize: 11,
+    // fontSize: 11,
+    fontSize: 10,
     [theme.breakpoints.down("sm")]: {
-      fontSize: 11,
+      fontSize: 10,
     },
   },
   clearButton: {
@@ -176,7 +178,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     paddingTop: 5,
     fontSize: 18,
-    color: theme.palette.textColors.heading,
+    color:'#a3c1ff',
+    // color: theme.palette.textColors.heading,
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 18,
@@ -193,7 +196,8 @@ const useStyles = makeStyles((theme) => ({
   },
   hintStyle: {
     fontSize: 13,
-    color: theme.palette.textColors.subheading,
+    color: 'white',
+    // color: theme.palette.textColors.subheading,
 
     marginTop: 20,
     [theme.breakpoints.down("sm")]: {

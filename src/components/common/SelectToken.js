@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
   token: {
     display: "flex",
     alignItems: "center",
-    backgroundColor: theme.palette.primary.iconBack,
+    // backgroundColor: theme.palette.primary.iconBack,
+    backgroundColor: "#a3c1ff",
     borderRadius: 20,
     paddingLeft: 8,
     paddingRight: 0,
@@ -59,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   selectedToken: {
-    color: "#000000",
+    color: "#a3c1ff",
+    // color: "#000000",
     marginLeft: 5,
     fontSize: 15,
     fontWeight: 400,
@@ -68,7 +70,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   dropIcon: {
-    color: "#bdbdbd",
+    color: "#a3c1ff",
+    // color: "#bdbdbd",
   },
 }));
 

@@ -44,7 +44,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 12,
     textTransform: "none",
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.7)",
+      background: "#370937",
+      // background: "rgba(255, 255, 255, 0.7)",
     },
     [theme.breakpoints.down("md")]: {
       marginRight: 0,

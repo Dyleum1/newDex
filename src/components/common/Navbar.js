@@ -80,7 +80,8 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "baseline",
     textAlign: "left",
     fontSize: 16,
-    color: theme.palette.primary.iconColor,
+    // color: theme.palette.primary.iconColor,
+    color: '#a3c1ff',
   },
   navbarItemsDesktop: {
     paddingRight: 10,
@@ -108,7 +109,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   menuIcon: {
-    color: theme.palette.primary.iconColor,
+    color: '#a3c1ff',
+    // color: theme.palette.primary.iconColor,
   },
   logo: {
     height: 44,
