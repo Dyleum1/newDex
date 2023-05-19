@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   input: {
     backgroundColor: "transparent",
     // color: theme.palette.primary.iconColor,
-    color: "white",
+    color: "#a3c1ff",
     height: 40,
     border: "1px solid rgba(224, 224, 224,1)",
     borderRadius: 10,
@@ -75,10 +75,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 400,
   },
   slippageItem: {
-    color: theme.palette.primary.iconColor,
+    color: "#a3c1ff",
     cursor: "pointer",
     border: "1px solid rgba(224, 224, 224,1)",
-    background: theme.palette.primary.iconBack,
+    background:"#370937",
 
     borderRadius: 10,
     padding: 10,
@@ -86,7 +86,8 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 5,
 
     "&:hover": {
-      background: "rgba(255, 255, 255, 0.1)",
+      background: "#a3c1ff",
+      color: "white",
     },
     [theme.breakpoints.down("sm")]: {
       padding: 5,

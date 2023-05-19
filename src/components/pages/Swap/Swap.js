@@ -93,7 +93,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center"
   },
   settingIcon: {
-    color: theme.palette.primary.iconColor,
+    color: 'white',
+    // color: theme.palette.primary.iconColor,
     fontSize: 22,
     cursor: "pointer",
     transition: "all 0.4s ease",
@@ -216,7 +217,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 5,
   },
   heading: {
-    color: theme.palette.textColors.headingwhite,
+    // color: theme.palette.textColors.headingwhite,
+    color: 'a3c1ff',
     letterSpacing: -0.7,
     fontSize: 18,
     fontWeight: 500,
@@ -778,13 +780,14 @@ const Swap = (props) => {
         <div className={classes.cardContents}>
           <div className={classes.cardHeading}>
             <h6 className={classes.heading}>Swap </h6>
-            {/* <IconButton className={classes.iconButton}>
+            
+            <IconButton className={classes.iconButton}>
               <Settings
                 fontSize="default"
                 onClick={handleSettings}
                 className={classes.settingIcon}
               />
-            </IconButton> */}
+            </IconButton>
           </div>
 
           <SwapCardItem
@@ -877,7 +880,7 @@ const Swap = (props) => {
       </Card>
 
       <Card elevation={20} className={classes.cardOverall}>
-      <Button
+      {/* <Button
         className={classes.advancedButton}
         style={{color:"white"}}
         onClick={handleSettings}
@@ -892,7 +895,7 @@ const Swap = (props) => {
             className={classes.settingIcon}
           />
         </div>
-      </Button>
+      </Button> */}
 
       <Button
         disabled={currentSwapStatus.disabled}
