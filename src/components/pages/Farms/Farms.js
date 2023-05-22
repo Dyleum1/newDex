@@ -209,8 +209,8 @@ const Farms = (props) => {
             <h6 className={classes.title}>Farm</h6>     
           </div>
           <div className={classes.cardFeature}>     
-      <h1 className={classes.heading}>Coming Soon</h1>
-      <p className={classes.heading}>Farming will be available soon on</p>
+      {/* <h1 className={classes.heading}>Coming Soon</h1> */}
+      <p className={classes.heading}>Farming Will Be Available Soon On Core Main Network</p>
           </div>
 
         
