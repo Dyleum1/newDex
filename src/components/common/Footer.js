@@ -7,6 +7,7 @@ import { MoreVert } from "@material-ui/icons";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import LanguageIcon from '@material-ui/icons/Language';
+import { FaReact,FaDiscord } from 'react-icons/fa';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -134,7 +135,7 @@ const Footer = () => {
                   className={classes.menuIcon}
     
                 >
-                  <MoreVert className={classes.menuIcon} LanguageIcon/>
+                  <FaDiscord className={classes.menuIcon} />
                 </IconButton>
         Discord
       </a>
