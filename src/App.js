@@ -54,11 +54,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   footer: {
-    width: "100vw",
-    display: "flex",
-    justifyContent: "center",
+    width: "100%",
+    // width: "100vw",
+    // display: "flex",
+    // justifyContent: "center",
 
-    paddingBottom: 20,
+    // paddingBottom: 20,
     [theme.breakpoints.down("sm")]: {
       fontSize: 12,
       width: "100%",
@@ -144,9 +145,9 @@ function App() {
               </Switch>
             </BrowserRouter>
           </div>
-          {/* <div className={classes.footer}>
+          <div className={classes.footer}>
             <Footer />
-          </div> */}
+          </div>
         </div>
       </ThemeProvider>
     </Suspense>

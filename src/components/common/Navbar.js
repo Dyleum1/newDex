@@ -258,6 +258,15 @@ const Navbar = ({ account: { currentChain } }) => {
           </a>
 
           {/* <div className={classes.leftMargin} /> */}
+          <div>
+            <a
+              href="/"
+              className={classes.navbarItemsDesktop}
+              style={{ color: "#fff" }}
+            >
+              Swap 
+            </a>
+          </div>
 
           <div>
           <a
@@ -298,15 +307,6 @@ const Navbar = ({ account: { currentChain } }) => {
               INO 
             </a>
           </div> */}
-          <div>
-            <a
-              href="/"
-              className={classes.navbarItemsDesktop}
-              style={{ color: "#fff" }}
-            >
-              Swap 
-            </a>
-          </div>
           {/* <div>
             <a
               href="https://p2p.polkabridge.org"
