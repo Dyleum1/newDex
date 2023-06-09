@@ -6,7 +6,7 @@ import {
   Token,
   TokenAmount,
   WETH,
-} from "@tiwatoyin/dyleum_sdk";
+} from "@ayelawa/dyleum_sdk";
 
 export function wrappedCurrency(
   currency: Currency | undefined,

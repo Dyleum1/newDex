@@ -9,6 +9,7 @@ function getRpcUrl(chainId: SupportedChainId): string {
   switch (chainId) {
     case SupportedChainId.CORE:
     case SupportedChainId.CORE_TESTNET:
+   case SupportedChainId.NAUT_TEST:
     case SupportedChainId.MAINNET:
     case SupportedChainId.RINKEBY:
     case SupportedChainId.ROPSTEN:
@@ -52,11 +53,11 @@ export const switchChain = async (
     } catch (error) {
       console.log('switch test activation failed ', { error });
       const networkObject =
-        chainId === 1116? NETWORK_DETAILS.CORE : NETWORK_DETAILS.CORE_TESTNET;
+        chainId === 1116? NETWORK_DETAILS.CORE : NETWORK_DETAILS.NAUT_TEST;
 
       console.log('switch test activation failed now adding ', networkObject);
       console.log('switch test adding chain ', networkObject);
-      if (chainId === 1116) {
+      if (chainId === 91002) {
         await connector?.provider?.request({
           method: 'wallet_addEthereumChain',
           params: [networkObject],

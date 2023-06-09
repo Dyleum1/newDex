@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Nautilus Triton Testnet",
+      "symbol": "ZBC",
+      "address": "0xA178E22ae6d720a4fDA619AeC392F95C5bC7cAeD",
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/4dCffp7/icon.webp"
+    },
+    {
+      "name": "Dyleum Token",
+      "symbol": "LEUMx",
+      "address": "0x3eECde42973B0b5157e81e14caDCfe22700B6Bea",
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/9nFB5Mq/dyleumresize.png"
+    },
+    {
+        "name": "Wrapped Nautilus Triton",
+        "symbol": "WZBC",
+        "address": "0xA178E22ae6d720a4fDA619AeC392F95C5bC7cAeD",
+        "decimals": 18,
+        "logoURI": "https://i.ibb.co/4dCffp7/icon.webp"
+      }
+  ]

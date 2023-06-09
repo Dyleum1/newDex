@@ -1,4 +1,4 @@
-import { Token } from "@tiwatoyin/dyleum_sdk";
+import { Token } from "@ayelawa/dyleum_sdk";
 import { useCallback, useEffect, useMemo } from "react";
 import { useTokenContract } from "hooks/useContract";
 import { useSingleCallResult } from "state/multicall/hooks";

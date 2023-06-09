@@ -26,6 +26,10 @@ export const FALLBACK_URLS: any = {
     // "Safe" URLs
     "https://rpc.test.btcs.network"
   ],
+  [SupportedChainId.NAUT_TEST]: [
+    // "Safe" URLs
+    "https://triton.api.nautchain.xyz"
+  ],
   [SupportedChainId.ROPSTEN]: [
     // "Fallback" URLs
     "https://rpc.ankr.com/eth_ropsten",
@@ -100,9 +104,14 @@ export const RPC_URLS: any = {
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.CORE],
   ],
+
   [SupportedChainId.CORE_TESTNET]: [
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.CORE_TESTNET],
+  ],
+  [SupportedChainId.NAUT_TEST]: [
+    `https://triton.api.nautchain.xyz`,
+    ...FALLBACK_URLS[SupportedChainId.NAUT_TEST],
   ],
   [SupportedChainId.RINKEBY]: [
     `https://rinkeby.infura.io/v3/${INFURA_KEY}`,

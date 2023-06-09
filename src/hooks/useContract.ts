@@ -15,7 +15,7 @@ import WETH_ABI from "../contracts/abi/weth.json";
 import RouterAbi from "../contracts/abi/Router.json";
 import farmAbi from "../contracts/abi/PolkaBridgeFarm.json";
 
-import { WETH } from "@tiwatoyin/dyleum_sdk";
+import { WETH } from "@ayelawa/dyleum_sdk";
 import { FALLBACK_DEFAULT_CHAIN } from "connection/chains";
 
 // returns null on errors

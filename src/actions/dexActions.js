@@ -41,6 +41,7 @@ import {
 // import mumbaitokens from "../tokenList/tokenListMatic.json"
 // import coretesttokens from "../tokenList/tokenListCoreTest.json"
 import coremaintokens from "../tokenList/tokenListCore.json"
+import nautilustesttokens from "../tokenList/tokenListZBC.json"
 // swap transaction function
 export const swapTokens =
   (token0, token1, deadline, currentSwapFn, currenSwapPath, account, chainId) =>
@@ -752,7 +753,8 @@ const localTokenList = {
   // 97: testTokens.bsc,
   // 80001:mumbaitokens
   // 1115: coretesttokens
-  1116: coremaintokens
+  1116: coremaintokens,
+  91002: nautilustesttokens
 };
 export const loadTokens = (chainId) => async (dispatch) => {
   try {
@@ -761,11 +763,12 @@ export const loadTokens = (chainId) => async (dispatch) => {
     });
 
     // todo: fetch token list from network
+    // const localTokens = localTokenList?.[!chainId ? 1116 : chainId || 91002];
     const localTokens = localTokenList?.[!chainId ? 1116 : chainId];
 
     const cachedTokens = getCachedTokens();
     const allTokens =
-      cachedTokens.length > 0
+      cachedTokens?.length > 0
         ? [...cachedTokens, ...localTokens]
         : [...localTokens];
     dispatch({

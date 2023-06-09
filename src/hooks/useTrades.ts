@@ -6,7 +6,7 @@ import {
   Token,
   Trade,
   WETH,
-} from "@tiwatoyin/dyleum_sdk";
+} from "@ayelawa/dyleum_sdk";
 import flatMap from "lodash.flatmap";
 import { useMemo } from "react";
 
@@ -19,6 +19,7 @@ import { wrappedCurrency } from "./wrappedCurrency";
 // import tokenListMatic from "../tokenList/tokenListMatic.json";
 // import tokenListCoreTest from "../tokenList/tokenListCoreTest.json";
 import tokenListCoremain from "../tokenList/tokenListCore.json";
+import tokenListNaut from "../tokenList/tokenListZBC.json"
 import useActiveWeb3React from "../hooks/useActiveWeb3React";
 import { getAddress } from "@ethersproject/address";
 
@@ -29,7 +30,8 @@ const localTokens: { [index: string]: Array<any> } = {
   // 56: tokenListBsc,
   // 80001: tokenListMatic,
   // 1115:tokenListCoreTest
-  1116: tokenListCoremain
+  1116: tokenListCoremain,
+  91002: tokenListNaut
 };
 
 function getTokenWithSymbol(symbol: string, chainId: ChainId) {
@@ -76,7 +78,7 @@ export function useAllCommonPairs(
     () =>
       flatMap(bases, (base): [Token, Token][] =>
         bases?.map((otherBase) => [base, otherBase])
-      )?.filter(([t0, t1]) => t0.address !== t1.address),
+      )?.filter(([t0, t1]) => t0?.address !== t1?.address),
     [bases]
   );
 

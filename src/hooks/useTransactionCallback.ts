@@ -1,6 +1,6 @@
 import { UPDATE_TRANSACTION_STATUS } from "actions/types";
 import { swapFnConstants, TransactionStatus } from "../constants/index";
-import { ChainId, Token } from "@tiwatoyin/dyleum_sdk";
+import { ChainId, Token } from "@ayelawa/dyleum_sdk";
 import { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useActiveWeb3React from "./useActiveWeb3React";

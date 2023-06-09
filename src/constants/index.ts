@@ -3,13 +3,20 @@ const testing = true;
 export const currentConnection = testing ? "testnet" : "mainnet";
 
 export const TOKEN_ADDRESS = {
-  CORE: {
+  COREDAO: {
     1116:"0x40375c92d9faf44d2f9db9bd9ba41a3317a2404f"
     // 1115: "0x536eABc2C78401661EdFE1f6Ede9d420775814B1"
 
   },
+  ZBC: {
+    91002: "0xA178E22ae6d720a4fDA619AeC392F95C5bC7cAeD"
+  },
+  WZBC: {
+    91002: "0xA178E22ae6d720a4fDA619AeC392F95C5bC7cAeD"
+  },
   LEUMx: {
-    1116: "0x03Bd86798e9aEd0c27EbCEE39754f3F0ac36615c"
+    1116: "0x03Bd86798e9aEd0c27EbCEE39754f3F0ac36615c",
+    91002: "0x3eECde42973B0b5157e81e14caDCfe22700B6Bea"
 
   },
   LEUM: {
@@ -58,7 +65,8 @@ export const NATIVE_TOKEN_ADDRESS: { [index: string]: string } = {
   4: TOKEN_ADDRESS.ETH[4],
   56: TOKEN_ADDRESS.BNB[56],
   97: TOKEN_ADDRESS.BNB[97],
-  1116: TOKEN_ADDRESS.WCORE[1116],
+  1116: TOKEN_ADDRESS.COREDAO[1116],
+  91002: TOKEN_ADDRESS.ZBC[91002],
   // 1115: TOKEN_ADDRESS.WCORE[1115],
 };
 
@@ -70,6 +78,7 @@ export const ROUTER_ADDRESS: { [index: string]: string } = {
   // 80001: "0xb4903E541Bde5C915edD1CE9be817eAE92918147"
   // 80001: "0xA25e4a127356556a6f02898dF917c1d842B19dEe"
   1116: "0xae412fdB0675e0C8b22c124270CDa7e96Db5aD44",
+  91002: "0x839EF7149cA6eB7e560E77170c009E5c3d69Ac08"
   // 1115: "0xD893adf4c0165D10321038AE9b2656c4f1B37840"
 };
 
@@ -81,6 +90,7 @@ export const FACTORY_ADDRESS = {
   // 80001: "0xCcDEB3653D58ab48A1e44724F5243007954d8426"
   // 80001:"0x6552da8c60a0ac0807b60ac997120f4ce0ab337b"sss
   1116: "0x1FDD4f9Ff6A9b341Fa2067Be9A8f68EFBB8d5Fa4",
+  91002: "0xf02C5208E07B4c671914306428C89c55A145C061"
   // 1115: "0xc29B38d44A9297CC1373A5735cE38BfD4E999130"
 };
 
@@ -99,6 +109,7 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 56: "0x6e568FcE995F5c7ddaFB8C0b74B3241328498F8A",
   // 80001:"0xd85620D66D32952b97764dF14302498006Cf90fB"
     1116: "0xc29B38d44A9297CC1373A5735cE38BfD4E999130",
+    91002: "0xb81E3534F9A6AD7f9B9dE2c2D3989C78135782ea"
   // 1115: "0x396b44e4252434F01738Bf3F2Db101dbd5177058"
 };
 
@@ -115,9 +126,10 @@ export const USDT = "USDT";
 export const USDC = "USDC";
 export const MOVR = "MOVR";
 export const WMATIC= "WMATIC";
-export const CORE = "COREDAO";
+export const COREDAO = "COREDAO";
 export const WCOREDAO = "WCOREDAO";
 export const LEUMx = "LEUMx";
+export const ZBC = "ZBC";
 
 
 export const NATIVE_TOKEN: { [index: number]: string } = {
@@ -126,8 +138,9 @@ export const NATIVE_TOKEN: { [index: number]: string } = {
   // 97: BNB,
   // 56: BNB,
   // 80001:WMATIC
-  1116: "WCORE",
-  1115: "WCORE"
+  1116: "COREDAO",
+  1115: "WCORE",
+  91002: "ZBC"
 };
 
 export const FARM_TOKEN: { [index: number]: string } = {
@@ -143,8 +156,9 @@ export const DEFAULT_SWAP_TOKENS = {
   // 97: ["BNB", "PWAR"],
   // 56: ["BNB", "PBR"],
   // 80001: ["WMATIC", "STT"]
-  1116: ["WCORE", "LEUMx"],
-  1115: ["WCORE", "LEUM"]
+  1116: ["COREDAO", "LEUMx"],
+  1115: ["WCORE", "LEUM"],
+  91002: ["ZBC", "LEUMx"]
 };
 
 export const DEFAULT_POOL_TOKENS = {
@@ -153,8 +167,9 @@ export const DEFAULT_POOL_TOKENS = {
   97: ["BNB", "PWAR"],
   56: ["BNB", "PBR"],
   80001:["WMATIC", "STT"],
-  1116: ["WCORE", "LEUMx"],
-  1115: ["WCORE", "LEUM"]
+  1116: ["COREDAO", "LEUMx"],
+  1115: ["WCORE", "LEUM"],
+  91002: ["ZBC", "LEUMx"],
 };
 
 export const TOKEN_BLACKLIST = [];
@@ -171,9 +186,10 @@ export const maticNetwork = "polygon";
 export const mumbainetwork= "mumbai";
 export const coretestNetwork = "coretest";
 export const coremainNetwork = "coremain";
+export const nautilustestNetwork = "nautilustest";
 
 export const supportedChains = [
-  1, 4, 1285, 1287, 97, 56, 137, 80001, 1116,1115, 1666700000, 1666600000,
+  1, 4, 1285, 1287, 97, 56, 137, 80001, 1116,1115, 91002, 1666700000, 1666600000,
 ];
 
 export const allowanceAmount = "9999999999999999999999999";
@@ -184,7 +200,8 @@ export const BLOCK_EXPLORER = {
   4: "https://rinkeby.etherscan.io",
   56: "https://bscscan.com",
   97: "https://testnet.bscscan.com",
-  80001: "https://mumbai.polygonscan.com/"
+  80001: "https://mumbai.polygonscan.com/",
+  91002: "https://triton.nautscan.com/"
 };
 
 export const nullAddress = "0x0000000000000000000000000000000000000000";
@@ -337,8 +354,9 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   56: ["BNB"], 
   137: [],
   80001: ["WMATIC", "STT"],
-  1116: ["WCORE", "LEUMx"],
+  1116: ["COREDAO", "LEUMx"],
   1115: ["WCORE", "LEUM"],
+  91002: ["ZBC", "LEUMx"],
   1666700000: [],
   1666600000: [],
 };

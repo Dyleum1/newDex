@@ -5,7 +5,7 @@ import {
   Percent,
   TokenAmount,
   Trade,
-} from "@tiwatoyin/dyleum_sdk";
+} from "@ayelawa/dyleum_sdk";
 
 const BASE_FEE = new Percent(JSBI.BigInt(20), JSBI.BigInt(10000));
 const ONE_HUNDRED_PERCENT = new Percent(JSBI.BigInt(10000), JSBI.BigInt(10000));

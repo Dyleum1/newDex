@@ -4,7 +4,7 @@ import {
   JSBI,
   Token,
   TokenAmount,
-} from "@tiwatoyin/dyleum_sdk";
+} from "@ayelawa/dyleum_sdk";
 import { useMemo } from "react";
 import {
   useMultipleContractSingleData,

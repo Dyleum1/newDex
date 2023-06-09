@@ -6,6 +6,7 @@ import {
   // mumbainetwork,
   // coretestNetwork,
   coremainNetwork,
+  nautilustestNetwork,
   REWARD_TOKEN_PER_YEAR,
 } from "../constants/index";
 
@@ -316,8 +317,8 @@ export const getNetworkNameById = (networkId) => {
   } else if ([1116, 1115].includes(parseInt(networkId))) {
     return coremainNetwork;
   
-  // } else if ([137, 80001].includes(parseInt(networkId))) {
-  //   return mumbainetwork;
+  } else if ([91002].includes(parseInt(networkId))) {
+    return nautilustestNetwork;
   // } else if ([1285, 1287].includes(parseInt(networkId))) {
   //   return moonriverNetwork;
   } else {

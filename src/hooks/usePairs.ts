@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency, Token, ChainId} from "@tiwatoyin/dyleum_sdk";
+import { TokenAmount, Pair, Currency, Token, ChainId} from "@ayelawa/dyleum_sdk";
 import { useMemo } from "react";
 import { Interface } from "@ethersproject/abi";
 

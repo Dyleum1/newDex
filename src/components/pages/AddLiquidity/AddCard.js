@@ -38,7 +38,7 @@ import { useTokenData } from "../../../contexts/TokenData";
 import { useLocation } from "react-router-dom";
 import useActiveWeb3React from "../../../hooks/useActiveWeb3React";
 import { useCurrencyBalances } from "../../../hooks/useBalance";
-import { Token } from "@tiwatoyin/dyleum_sdk";
+import { Token } from "@ayelawa/dyleum_sdk";
 import { isAddress } from "../../../utils/contractUtils";
 import { wrappedCurrency } from "../../../hooks/wrappedCurrency";
 import { useUserAuthentication } from "../../../hooks/useUserAuthentication";

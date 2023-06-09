@@ -83,6 +83,9 @@ export const RPC_PROVIDERS: any = {
   [SupportedChainId.CORE_TESTNET]: new AppJsonRpcProvider(
     SupportedChainId.CORE_TESTNET
   ),
+  [SupportedChainId.NAUT_TEST]: new AppJsonRpcProvider(
+    SupportedChainId.NAUT_TEST
+  ),
   [SupportedChainId.BSC_TESTNET]: new AppJsonRpcProvider(
     SupportedChainId.BSC_TESTNET
   ),

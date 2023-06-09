@@ -4,6 +4,7 @@ export enum SupportedChainId {
   RINKEBY = 4,
   GOERLI = 5,
   KOVAN = 42,
+  NAUT_TEST = 91002,
 
   BSC = 56,
   BSC_TESTNET = 97,
@@ -38,6 +39,7 @@ export const CHAIN_IDS_TO_NAMES = {
   //core network
   [SupportedChainId.CORE]: "core",
   [SupportedChainId.CORE_TESTNET]: "core_testnet",
+  [SupportedChainId.NAUT_TEST]: "naut_testnet",
 };
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = Object.values(
@@ -53,6 +55,7 @@ export const MULTICALL_ADDRESS: { [index: string]: string } = {
   // 137: "0xbfB508313126cf61CFb3BD7e570cC79C67998A53",
   // 80001: "0xd85620D66D32952b97764dF14302498006Cf90fB",
   1116: "0xc29B38d44A9297CC1373A5735cE38BfD4E999130",
+  91002: "0xb81E3534F9A6AD7f9B9dE2c2D3989C78135782ea"
   // 1115: "0x396b44e4252434F01738Bf3F2Db101dbd5177058"
 };
 
@@ -64,8 +67,9 @@ export const NATIVE_TOKEN: { [index: number]: string } = {
   56: "BNB",
   137: "WMATIC",
   80001: "WMATIC",
-  1116: "WCORE",
+  1116: "COREDAO",
   1115: "WCORE",
+  91002: "ZBC",
   1666600000: "ONE",
   1666700000: "ONE",
 };
@@ -95,6 +99,11 @@ export const NETWORK_DETAILS = {
     chainName: CHAIN_IDS_TO_NAMES[SupportedChainId.CORE_TESTNET],
     chainRaw: SupportedChainId.CORE_TESTNET,
   },
+  NAUT_TEST: {
+    chainId: `0x${SupportedChainId.NAUT_TEST.toString(16)}`,
+    chainName: CHAIN_IDS_TO_NAMES[SupportedChainId.NAUT_TEST],
+    chainRaw: SupportedChainId.NAUT_TEST,
+    },
   POLYGON_MUMBAI: {
     chainId: `0x${SupportedChainId.POLYGON_MUMBAI.toString(16)}`,
     chainName: CHAIN_IDS_TO_NAMES[SupportedChainId.POLYGON_MUMBAI],
@@ -168,6 +177,16 @@ const CHAIN_INFO: any = {
     label: "Core testnet",
     // logoUrl: ethereumLogoUrl,
     nativeCurrency: { name: "WCORE", symbol: "WCORE", decimals: 18 },
+    // color: darkTheme.chain_1,
+  },
+  [SupportedChainId.NAUT_TEST]: {
+    networkType: NetworkType.L1,
+    // docs: 'https://docs.uniswap.org/',
+    explorer: "https://triton.nautscan.com/",
+    // infoLink: 'https://info.uniswap.org/#/',
+    label: "Nautilius",
+    // logoUrl: ethereumLogoUrl,
+    nativeCurrency: { name: "ZBC", symbol: "ZBC", decimals: 18 },
     // color: darkTheme.chain_1,
   },
   [SupportedChainId.POLYGON_MUMBAI]: {
