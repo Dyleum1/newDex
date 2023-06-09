@@ -96,6 +96,10 @@ export const FALLBACK_URLS: any = {
  * These are the URLs used by the interface when there is not another available source of chain data.
  */
 export const RPC_URLS: any = {
+  [SupportedChainId.NAUT_TEST]: [
+    `https://triton.api.nautchain.xyz`,
+    ...FALLBACK_URLS[SupportedChainId.NAUT_TEST],
+  ],
   [SupportedChainId.MAINNET]: [
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.MAINNET],
@@ -109,10 +113,7 @@ export const RPC_URLS: any = {
     `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.CORE_TESTNET],
   ],
-  [SupportedChainId.NAUT_TEST]: [
-    `https://triton.api.nautchain.xyz`,
-    ...FALLBACK_URLS[SupportedChainId.NAUT_TEST],
-  ],
+  
   [SupportedChainId.RINKEBY]: [
     `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
     ...FALLBACK_URLS[SupportedChainId.RINKEBY],

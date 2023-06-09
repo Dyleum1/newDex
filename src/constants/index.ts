@@ -21,7 +21,8 @@ export const TOKEN_ADDRESS = {
   },
   LEUM: {
     1116: "",
-    1115: "0x7Aad75d782C8ecfc3E25157eA6134Ad17Ed16575"
+    1115: "0x7Aad75d782C8ecfc3E25157eA6134Ad17Ed16575",
+    91002: "0x3eECde42973B0b5157e81e14caDCfe22700B6Bea"
 
   },
   WCORE:{
@@ -128,7 +129,7 @@ export const MOVR = "MOVR";
 export const WMATIC= "WMATIC";
 export const COREDAO = "COREDAO";
 export const WCOREDAO = "WCOREDAO";
-export const LEUMx = "LEUMx";
+export const LEUM = "LEUM";
 export const ZBC = "ZBC";
 
 
@@ -158,7 +159,7 @@ export const DEFAULT_SWAP_TOKENS = {
   // 80001: ["WMATIC", "STT"]
   1116: ["COREDAO", "LEUMx"],
   1115: ["WCORE", "LEUM"],
-  91002: ["ZBC", "LEUMx"]
+  91002: ["ZBC", "LEUM"]
 };
 
 export const DEFAULT_POOL_TOKENS = {
@@ -169,7 +170,7 @@ export const DEFAULT_POOL_TOKENS = {
   80001:["WMATIC", "STT"],
   1116: ["COREDAO", "LEUMx"],
   1115: ["WCORE", "LEUM"],
-  91002: ["ZBC", "LEUMx"],
+  91002: ["ZBC", "LEUM"],
 };
 
 export const TOKEN_BLACKLIST = [];
@@ -356,7 +357,7 @@ export const SWAP_BASES: { [index: string]: Array<string> } = {
   80001: ["WMATIC", "STT"],
   1116: ["COREDAO", "LEUMx"],
   1115: ["WCORE", "LEUM"],
-  91002: ["ZBC", "LEUMx"],
+  91002: ["ZBC", "LEUM"],
   1666700000: [],
   1666600000: [],
 };

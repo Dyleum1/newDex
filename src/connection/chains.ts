@@ -247,14 +247,14 @@ export function isSupportedChain(
   return !!chainId && !!SupportedChainId[chainId];
 }
 
-export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.CORE  // Todo change this for release
+export const FALLBACK_DEFAULT_CHAIN: number = SupportedChainId.NAUT_TEST  // Todo change this for release
 export const DAPP_SUPPORTED_ON_CHAINS: number[] = [
   SupportedChainId.MAINNET,
   SupportedChainId.BSC,
   SupportedChainId.POLYGON_MUMBAI,
   SupportedChainId.CORE,  
   SupportedChainId.CORE_TESTNET,
-  SupportedChainId.NAUT_TEST,
+  // SupportedChainId.NAUT_TEST,
   
 
 ];
