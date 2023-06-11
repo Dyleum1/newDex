@@ -49,7 +49,7 @@ import { useCurrencyBalances } from "../../../hooks/useBalance";
 import { useUserAuthentication } from "../../../hooks/useUserAuthentication";
 import { useTokenAllowance } from "hooks/useAllowance";
 import { CONNECTOR_TYPE } from "connection/connectionConstants";
-import { whitelist } from "components/common/whitelist";
+// import { whitelist } from "components/common/whitelist";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -695,21 +695,10 @@ const Swap = (props) => {
   ]);
 
   const currentSwapStatus = useMemo(() => {
-    const canSwap = () => {
-      if (whitelist.length === 0) {
-        return true;
-      }
-      return whitelist
-        .map((addr) => addr.toLowerCase())
-        .includes(account.toLowerCase());
-    };
-
     if (!isActive) {
       return { currentBtnText: "Connect Wallet", disabled: false };
     }
-    if (isActive && !canSwap()) {
-      return { currentBtnText: "Wallet not whitelisted", disabled: true };
-    }
+
     if (
       ["swap", "token_approve"].includes(transaction.type) &&
       transaction.status === TransactionStatus.PENDING
@@ -720,6 +709,39 @@ const Swap = (props) => {
     if (!userHasSpecifiedInputOutput) {
       return { currentBtnText: "Enter token amount", disabled: true };
     }
+
+    if (noRoute && userHasSpecifiedInputOutput) {
+      return {
+        currentBtnText: "Insufficient liquidity for this trade!",
+        disabled: true,
+      };
+    }
+  // const currentSwapStatus = useMemo(() => {
+  //   const canSwap = () => {
+  //     if (whitelist.length === 0) {
+  //       return true;
+  //     }
+  //     return whitelist
+  //       .map((addr) => addr.toLowerCase())
+  //       .includes(account.toLowerCase());
+  //   };
+
+  //   if (!isActive) {
+  //     return { currentBtnText: "Connect Wallet", disabled: false };
+  //   }
+  //   if (isActive && !canSwap()) {
+  //     return { currentBtnText: "Wallet not whitelisted", disabled: true };
+  //   }
+  //   if (
+  //     ["swap", "token_approve"].includes(transaction.type) &&
+  //     transaction.status === TransactionStatus.PENDING
+  //   ) {
+  //     return { currentBtnText: "Pending Transaction...", disabled: false };
+  //   }
+
+  //   if (!userHasSpecifiedInputOutput) {
+  //     return { currentBtnText: "Enter token amount", disabled: true };
+  //   }
 
     if (noRoute && userHasSpecifiedInputOutput) {
       return {

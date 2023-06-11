@@ -45,7 +45,7 @@ import { useUserAuthentication } from "../../../hooks/useUserAuthentication";
 import { useTokenAllowance } from "../../../hooks/useAllowance";
 import { useTransactionCallback } from "../../../hooks/useTransactionCallback";
 import { getPairAddress } from "../../../contracts/connections";
-import { whitelist } from "components/common/whitelist";
+// import { whitelist } from "components/common/whitelist";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -745,33 +745,48 @@ const AddCard = (props) => {
     wrappedCurrency1,
   ]);
 
-  const currentAddLiquidityStatus = useMemo(() => {
-    const canSwap = () => {
-      if (whitelist.length === 0) {
-        return true;
+  // const currentAddLiquidityStatus = useMemo(() => {
+    // const canSwap = () => {
+    //   if (whitelist.length === 0) {
+    //     return true;
+    //   }
+    //   return whitelist
+    //     .map((addr) => addr.toLowerCase())
+    //     .includes(account.toLowerCase());
+    // };
+    const currentAddLiquidityStatus = useMemo(() => {
+      if (!isActive) {
+        return { currentBtnText: "Connect Wallet", disabled: false };
       }
-      return whitelist
-        .map((addr) => addr.toLowerCase())
-        .includes(account.toLowerCase());
-    };
+  
+      if (localStateLoading) {
+        return { currentBtnText: "Please wait...", disabled: true };
+      }
+  
+      if (
+        ["add", "token_approve"].includes(transaction.type) &&
+        transaction.status === "pending"
+      ) {
+        return { currentBtnText: "Pending Transaction...", disabled: true };
+      }
 
-    if (!isActive) {
-      return { currentBtnText: "Connect Wallet", disabled: false };
-    }
+    // if (!isActive) {
+    //   return { currentBtnText: "Connect Wallet", disabled: false };
+    // }
 
-    if (localStateLoading) {
-      return { currentBtnText: "Please wait...", disabled: true };
-    }
-    if (isActive && !canSwap()) {
-      return { currentBtnText: "Wallet not whitelisted", disabled: true };
-    }
+    // if (localStateLoading) {
+    //   return { currentBtnText: "Please wait...", disabled: true };
+    // }
+    // if (isActive && !canSwap()) {
+    //   return { currentBtnText: "Wallet not whitelisted", disabled: true };
+    // }
 
-    if (
-      ["add", "token_approve"].includes(transaction.type) &&
-      transaction.status === "pending"
-    ) {
-      return { currentBtnText: "Pending Transaction...", disabled: true };
-    }
+    // if (
+    //   ["add", "token_approve"].includes(transaction.type) &&
+    //   transaction.status === "pending"
+    // ) {
+    //   return { currentBtnText: "Pending Transaction...", disabled: true };
+    // }
 
     if (
       new BigNumber(parsedToken1Value || 0).eq(0) ||
