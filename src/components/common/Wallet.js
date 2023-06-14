@@ -132,9 +132,19 @@ const Wallet = () => {
       />
       <WalletModal popupActive={walletPopup} resetPopup={handleWalletClose} />
       {(!isActive || isNetworkSwitchRequired) && (
-        <Button onClick={handleWalletConnect} style={{color:"white"}} className={classes.smallBtn}>
-          {isNetworkSwitchRequired ? "Switch network" : "Connect wallet"}
-        </Button>
+        // <Button onClick={handleWalletConnect} style={{color:"white"}} className={classes.smallBtn}>
+        //   {isNetworkSwitchRequired ? "Switch network" : "Connect wallet"}
+        // </Button>
+        // ! folly
+        <Button style={{color:"white"}} onClick={handleWalletConnect} className={classes.root}>
+        <AccountBalanceWallet
+          style={{ marginRight: 5, fontSize: 20 }}
+          fontSize="medium"
+        />
+        <strong className={classes.numbers}>
+          {formattedAddress(account, 3)}
+        </strong>
+      </Button>
       )}
 
       {isActive && !isNetworkSwitchRequired && (
