@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://testnet.dyleum.com/",
   "private": true,
   "devDependencies": {
     "@craco/craco": "^6.4.3",
